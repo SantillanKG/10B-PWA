@@ -1,0 +1,52 @@
+/* Resetear estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+img.img-fluid {
+    max-width: 100%;
+    height: 250px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+#menu {
+    margin-top: 20px;
+    display: block;
+}
+
+#menu a {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #1b1b1b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background-color: #bebdbd;
+}
+
+#data {
+    margin: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
