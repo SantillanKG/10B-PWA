@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <img alt="Imagen" id="imagen">
+
+        <script>
+        // Metodo Blob
+        window-addEventListener('load', () =>{
+            const urlPhotos = 'https://images.unsplash.com/photo-1635923954970-553c049d20d1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDR8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D';
+            fetch(urlPhotos)
+                .then(response => response.blob())
+                .then(datos => {
+
+                    let imgUrl = document.querySelector('#imagen');
+
+                    imagen.src = URL.createObjectURL(datos);
+
+                    imagen.onload = function(evt) {
+                        URL.revokeObjectURL(this.src);
+                    };
+                });
+        });
+        </script>
+    </body>
+</html>
